@@ -1,4 +1,7 @@
+
 //Helpers
+
+@import "./helpers/variables";
 
 // Base
 
@@ -8,7 +11,11 @@
 
 // Components
 
+@import "./components/header";
 
 
 // Modules
+ 
+@import "./modules/text";
+@import "./modules/profession";
 
