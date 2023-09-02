@@ -8,7 +8,7 @@ interface NavigationItemProps {
 export const NavigationItem:FC<NavigationItemProps> = ({props})=> {
     return (
         <li className="navigation-item">
-            <a className="">{props}</a>
+            <a className="" href={`#${props}`}>{props}</a>
         </li>
     )
 }
