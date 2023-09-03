@@ -1,15 +1,18 @@
+import {  useAppSelector } from "../../../store/hooks/redux"
 import { NavigationItem } from "./NavigationItem"
 import { Vector } from "./Vector"
 
 
 export const Navigation = ()=> {
 
-    const state = ['home', 'About me','Skills', 'Portfolio', 'Contacts']
+    const {item} = useAppSelector(state=> state.navReducer)
+
+    console.log(item)
 
     return (
         <nav className="navigation">
             <ul className="navigation-list">
-                {state.map((item, index) => <NavigationItem key={index} props={item} />)}
+                {item.map((item, index) => <NavigationItem key={index} props={item.name} />)}
             </ul>
             <Vector />
         </nav>
