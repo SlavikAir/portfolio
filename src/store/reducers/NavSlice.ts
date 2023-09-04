@@ -18,8 +18,6 @@ const initialState: NavState = {
         ],
     isLoading: false,
     error:"",
-    
-
 }
 
 
