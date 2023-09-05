@@ -10,11 +10,11 @@ interface NavState {
 }
 
 const initialState: NavState = {
-    item: [{name:'home'},
-            {name:'About me'},
-            {name:'Skills'},
-            {name:'Portfolio'},
-            {name:'Contacts'}
+    item: [{name:'home', link:"/"},
+            {name:'About me',link:"About_me"},
+            {name:'Skills',link:"Skills"},
+            {name:'Portfolio',link:"Portfolio"},
+            {name:'Contacts',link:"Contacts"}
         ],
     isLoading: false,
     error:"",

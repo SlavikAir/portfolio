@@ -12,7 +12,7 @@ export const Navigation = ()=> {
     return (
         <nav className="navigation">
             <ul className="navigation-list">
-                {item.map((item, index) => <NavigationItem key={index} props={item.name} />)}
+                {item.map((item, index) => <NavigationItem key={index} name={item.name} link={item.link} />)}
             </ul>
             <Vector />
         </nav>

@@ -2,13 +2,14 @@ import { FC } from "react"
 
 
 interface NavigationItemProps {
-    props:string
+    name:string,
+    link:string
 }
 
-export const NavigationItem:FC<NavigationItemProps> = ({props})=> {
+export const NavigationItem:FC<NavigationItemProps> = ({name,link})=> {
     return (
         <li className="navigation-item">
-            <a className="" href={`#${props}`}>{props}</a>
+            <a className="" href={`${link}`}>{name}</a>
         </li>
     )
 }
