@@ -1,9 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import navReducer from "./reducers/NavSlice";
-
+import networkReducer from "./reducers/NetworkSlice"
 
 const rootReducer = combineReducers ({
     navReducer,
+    networkReducer,
+    
 })
 
 export const setupStore = () => {
