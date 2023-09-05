@@ -1,4 +1,7 @@
+
 //Helpers
+
+@import "./helpers/variables";
 
 // Base
 
@@ -8,7 +11,21 @@
 
 // Components
 
+@import "./components/header";
+@import "./components/footer";
 
 
 // Modules
+ 
+@import "./modules/text";
+@import "./modules/profession";
+@import "./modules/banner";
+@import "./modules/navigation";
+@import "./modules/vector";
+@import "./modules/name";
 
+
+// Admin
+
+
+@import "./admin/admin";
