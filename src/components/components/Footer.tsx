@@ -1,5 +1,6 @@
+import { BlockName } from "../modules/BlockName"
+import { Content } from "../modules/Content"
 import { Description } from "../modules/footerModules/Description"
-import { FooterText } from "../modules/footerModules/FooterText"
 import { LinksBody } from "../modules/footerModules/LinksBody"
 import { Button } from "../UI/Button"
 
@@ -9,8 +10,8 @@ export const Footer = () => {
         <footer className="footer">
             <div className="container-sm">
                 <div className="footer-items">
-                    <h2>Contacts</h2>
-                    <FooterText />
+                    <BlockName name="Contacts" />
+                    <Content  text="Want to know more or just chat? You are welcome!"/>
                     <Button />
                     <LinksBody />
                     <Description />

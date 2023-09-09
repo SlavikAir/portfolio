@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import navReducer from "./reducers/NavSlice";
 import networkReducer from "./reducers/NetworkSlice"
+import skillsReducer from "./reducers/SkillsSlice"
 
 const rootReducer = combineReducers ({
     navReducer,
     networkReducer,
+    skillsReducer,
     
 })
 
