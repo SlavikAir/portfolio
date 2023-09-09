@@ -7,6 +7,7 @@
 
 @import "./base/reset";
 
+
 // UI
 
 @import "./UI/button";
@@ -19,7 +20,7 @@
 
 @import "./components/header";
 @import "./components/footer";
-
+@import "./components/skills";
 
 // Modules
  
@@ -29,9 +30,11 @@
 @import "./modules/navigation";
 @import "./modules/vector";
 @import "./modules/name";
-@import "./modules/footer-text";
+@import "./modules/content";
 @import "./modules/links";
 @import "./modules/description";
+@import "./modules/Skills/skills";
+@import "./modules/Skills/skill-item";
 
 // Admin
 
