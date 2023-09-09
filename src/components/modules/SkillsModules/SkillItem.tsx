@@ -8,10 +8,10 @@ export const SkillItem:FC<ISkill> = ({icon,lvl,name}) => {
     return (
         <div className="skill-item">
             <div className="skill-img-container">
-                <img  src={icon}/>
+                <img alt="" src={icon}/>
             </div>
             <span>{name}</span>
-            <input  type="range" value={lvl} />
+            <input  type="range" defaultValue={lvl} />
         </div>
     )
 }
