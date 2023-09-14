@@ -9,3 +9,9 @@
 
 }
 
+.links-item-img {
+    transform: scale(1);
+    &:hover {
+        transform: scale(1.5);
+    }
+}
