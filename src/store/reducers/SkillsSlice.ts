@@ -3,10 +3,10 @@ import { ISkill } from "../models/ISkill";
 import Js from "../../img/skills/JavaScript-Symbol.png"
 import Ts from "../../img/skills/Typescript_logo_2020.svg.png"
 import Re from "../../img/skills/React-icon.svg.png"
-import ht from "../../img/skills/html-css.png"
+import ht from "../../img/skills/html.png"
 import No from "../../img/skills/node.png"
 import gi from "../../img/skills/GitHub_Invertocat_Logo.svg.png"
-import sacc from "../../img/skills/1200px-Sass_Logo_Color.svg.png"
+import sa from "../../img/skills/1200px-Sass_Logo_Color.svg.png"
 
 
 interface SkillsState {
@@ -22,7 +22,7 @@ const initialState: SkillsState = {
             { name: "Html/Css", lvl: 60, icon:ht},
             { name: "NodeJs", lvl: 20, icon:No},
             { name: "GitHub", lvl: 60, icon:gi},
-            { name: "Sass/Scss", lvl: 80, icon:sacc}],
+            { name: "Sass/Scss", lvl: 80, icon:sa}],
     error:"",
     isLoading:false,
 }
