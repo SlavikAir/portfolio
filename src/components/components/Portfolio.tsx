@@ -7,7 +7,7 @@ export const Portfolio = () => {
 const {item} = useAppSelector(store => store.portfolioReducer)
 
     return(
-        <main className="portfolio">
+        <main className="portfolio" id="Portfolio">
             <div className="container-sm">
                 <div className="portfolio-items">
                     <BlockName name="Portfolio" />

@@ -7,7 +7,7 @@ import { Button } from "../UI/Button"
 
 export const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" id="Contacts">
             <div className="container-sm">
                 <div className="footer-items">
                     <BlockName name="Contacts" />
