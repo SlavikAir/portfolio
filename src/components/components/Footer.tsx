@@ -11,8 +11,8 @@ export const Footer = () => {
 
     const [modal, setModal] = useState(false)
 
-    const Close = ()=> setModal(()=>false)
-    const Open = ()=> setModal(()=>true)
+    const close = ()=> setModal(()=>false)
+    const open = ()=> setModal(()=>true)
 
 
     return (
@@ -21,10 +21,10 @@ export const Footer = () => {
                 <div className="footer-items">
                     <BlockName name="Contacts" />
                     <Content  text="Want to know more or just chat? You are welcome!"/>
-                    <Button open={Open} />
+                    <Button open={open} />
                     <LinksBody />
                     <Description />
-                    <Modal Close={Close} modal={modal}/>
+                    <Modal close={close} modal={modal}/>
                 </div>
             </div>
         </footer>

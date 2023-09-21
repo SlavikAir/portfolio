@@ -1,19 +1,31 @@
+import { MouseEvent } from "react";
 import { FC } from "react"
+
+
 
 interface IModal {
     modal:boolean,
-    Close:any
+    close:any
     
 }
 
 
 
-export const Modal:FC<IModal> = ({modal,Close}) => {
+export const Modal:FC<IModal> = ({modal,close}) => {
+
+
+    const handleClick = (event: MouseEvent<HTMLDivElement>) => {
+        event.stopPropagation()
+        console.log(event.currentTarget.id)
+                if (event.currentTarget.id !== 'modalDiv') {
+          return
+        }
+        close()
+      };
     return (
-        <div className={`modal ${modal ? 'open' : 'close'}`} onClick={()=>Close()}> 
+        <div id="modalDiv"className={`modal ${modal ? 'open' : 'close'}`} onClick={handleClick}> 
                 <div className="mail-modal-body">
                     <div className='modal-body'>
-                        <button className="button-close" onClick={()=>Close()}>X</button>
                             <p>Slavikair2022@gmail.com</p>
                     </div>
              </div>
