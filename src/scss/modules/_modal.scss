@@ -1,0 +1,33 @@
+
+
+.modal {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: rgba($color: #000000, $alpha: 0.4);
+  backdrop-filter: blur(10px);
+  &.open {
+    height: 100%;
+    display: block;
+    z-index: 2;
+  }
+  &.close {
+    display: none;
+  } 
+}
+.mail-modal-body{
+  position: relative;
+  max-width: 250px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  pointer-events: none;
+}
+.modal-body {
+  pointer-events: none;
+
+}
+

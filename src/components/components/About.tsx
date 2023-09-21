@@ -4,7 +4,7 @@ import { Content } from "../modules/Content"
 
 export const About = ()=> {
 
-    const text1 = "Hello, I'm Vladislav, a Front-End Developer from Ukraine. I'm passionate about programming and everything related to it."
+    const text1 = "I'm Vladislav, a Front-End Developer from Ukraine. I'm passionate about programming and everything related to it."
     const text2 = "I have completed online and offline Front-End React Developer courses."
     const text3 = "Ready to implement excellent projects with wonderful people."
 

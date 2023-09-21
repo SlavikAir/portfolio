@@ -1,4 +1,4 @@
-import img from '../../../img/foto.png'
+import img from '../../../img/foto1.jpg'
 
 
 

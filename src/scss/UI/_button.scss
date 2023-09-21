@@ -20,3 +20,12 @@
     color: $secondColor;
     font-weight:bold;
 }
+
+.button-close {
+    background-color:$secondColor;
+    color: #ffffff;
+    position: relative;
+    left: 90%;
+    border-radius: 50%;
+    border: 0;
+}

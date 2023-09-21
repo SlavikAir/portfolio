@@ -7,6 +7,9 @@ import ht from "../../img/skills/html.png"
 import No from "../../img/skills/node.png"
 import gi from "../../img/skills/GitHub_Invertocat_Logo.svg.png"
 import sa from "../../img/skills/1200px-Sass_Logo_Color.svg.png"
+import redux from "../../img/skills/redux.jpg"
+import express from "../../img/skills/express-js.png"
+import mongo from "../../img/skills/mongo.png"
 
 
 interface SkillsState {
@@ -16,13 +19,17 @@ interface SkillsState {
 }
 
 const initialState: SkillsState = {
-    item:[{ name: "JavaScript", lvl: 70, icon:Js},
+    item:[{ name: "Html/Css", lvl: 60, icon:ht},
+            { name: "Sass/Scss", lvl: 80, icon:sa},
+            { name: "JavaScript", lvl: 70, icon:Js},
             { name: "TypeScript", lvl: 50, icon:Ts},
             { name: "React", lvl: 60, icon:Re},
-            { name: "Html/Css", lvl: 60, icon:ht},
             { name: "NodeJs", lvl: 20, icon:No},
             { name: "GitHub", lvl: 60, icon:gi},
-            { name: "Sass/Scss", lvl: 80, icon:sa}],
+            { name: "Redux", lvl: 50, icon:redux},
+            { name: "Express", lvl: 30, icon:express},
+            {name: "MongoDB", lvl: 30, icon:mongo},
+            ],
     error:"",
     isLoading:false,
 }
