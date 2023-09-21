@@ -1,7 +1,11 @@
+import { FC } from "react"
 
+interface IButton {
+    open:any
+}
 
-export const Button = () => {
+export const Button:FC<IButton> = ({open}) => {
     return (
-        <button className="button" onClick={()=> alert("slavikair2022@gmail.com")}>Show email</button>
+        <button className="button" onClick={()=>open()}>Show email</button>
     )
 }
