@@ -22,7 +22,7 @@ const Elevator = forwardRef<HTMLDivElement, ElevatorProps>((props,ref) => {
       };
     }, []);
 
-    console.log(scrollTop)
+   
 
     return (
       <div className={`elevator ${scrollTop > 333 ? "visible" : "invisible"} `} onClick={props.onElevatorClick}>
