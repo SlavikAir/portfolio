@@ -1,4 +1,5 @@
 .elevator {
+    
     position: fixed;
     bottom: 5%;
     left: 95%;
@@ -6,4 +7,11 @@
     img {
         height: 50px    ;
     }
+}
+
+.visible {
+    display: block;
+}
+.invisible {
+    display: none;
 }
